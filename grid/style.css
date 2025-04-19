@@ -2,13 +2,77 @@
     display: grid;
     grid-template-columns: 200px 250px;
     grid-auto-rows: minmax(150px, auto);
-    grid-gap: 20px;
+    grid-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+   
+   /* grid-template-areas: 
+       "header header"
+       "sidebar content"
+       "sidebar content" */
+    
+    
+    justify-content: center;  /* can use stretch if the content changes dynamically*/
+    align-content: center;
+    height: 100vh;
+
     justify-items: stretch;
     align-items: stretch;
   }
   
-  .grid-item-1 {
-    align-self: start;
+ /* .grid-item-1 {
+    align-self: start;  -> can override any justify or align items use like this
     justify-self: center;
+
+    }*/
+
+
+ /* .grid-item-1 {
+    grid-area: header;
   }
+  .grid-item-2 {
+    grid-area: sidebar;
+  }
+  .grid-item-3 {
+    grid-area: content;
+  }*/
   
+
+   /* .grid-item-1 {
+    grid-column-start: 1;  -> item1 starts at the first column 
+    grid-column-end: -1;  -> item1 ends at the last column
+  }
+  */
+
+
+   /* .grid-item-1 {
+    grid-column: 1 / -1 ;  -> does the same thing as above starts at column 1 and ends at last column
+  }
+  */
+
+
+    /* .grid-item-2 {
+    grid-row-start: 2 ;  -> starts at row 2
+    grid-row-end: 4; -> ends at the 4th row thus size is double as item 1
+  }
+  */
+
+  /* .grid-item-3 {
+    grid-row-start: 2 ;  -> starts at row 2
+    grid-row-end: 4; -> ends at the 4th row thus size is double as item 1
+  }
+  */
+
+
+  /*  similarly above style can be written using span also 
+    .grid-item-1 {
+        grid-column: span 2;   -> takes 2 column space by default
+    }
+    .grid-item-2 {
+        grid-row: span 2;     -> takes 2 rows space by default
+    }
+    .grid-item-1 {
+        grid-row: span 2;    -> takes 2 rows space by default
+    }
+
+  */
