@@ -1,0 +1,65 @@
+.flexbox-container{
+    display: flex;
+    height: 800px;
+    justify-content: flex-start; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* all elements will start on the main axis
+    flex-center -> all flexbox will be in center
+    space-between -> evenly spaced between all container
+    space-around -> evenly spaced from all sides
+    align-items: stretch 
+
+    stretch -> stretched to full size
+    flex-start -> will align to top of the cross axis
+    center -> will align to center of cross axis
+
+                        |cross axix
+                        |
+                        |
+                        |
+          ------------------------------------
+                        |               Main axis
+                        |
+                        |
+                        |
+
+        align-content: center;
+
+    */
+}
+
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+
+.flexbox-item-1 {
+    min-height: 100px;
+    /* 
+    flex-shrink: 0;  ->  if you dont want item 1 to shrink on changing browser size keep it 0
+    flex-grow: 1;    -> fills the extra space on browser dimension change with that item
+    flex-basis: 0;   -> tells to start from 0 and overides and declared width in the styling
+    align-self: center -> aligns the container to the center
+    align-self: flex-end -> aligns to the end of the container
+    order: 1;        -> rearange the order visually not changing the html document - donot use this messes up html reader.
+
+    flex: 1 0 0px;   -> shortcut for using above properties in 1 line where 1 is flex grow, 0 is flex shrink and 0px is flex basis
+
+    */
+
+
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}

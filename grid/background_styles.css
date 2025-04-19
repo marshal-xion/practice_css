@@ -35,7 +35,7 @@ html, body {
 }
 
 .grid-item::before {
-  content: 'Grid Item';
+  content: 'Item';
   position: absolute;
   font-size: 25px;
   font-weight: bold;
